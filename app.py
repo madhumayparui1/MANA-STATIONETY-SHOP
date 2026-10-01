@@ -37,8 +37,8 @@ st.set_page_config(page_title="Stationery & Online Service Centre", page_icon="�
 st.title("🏪 STATIONERY & ONLINE SERVICE CENTRE")
 st.markdown("### *Your Work Our Priority* 🎯")
 
-# ডেস্কটপ থেকে তোমার দোকানের আসল ছবি লোড করা হচ্ছে
-photo_path = "c:/Users/Dell/Desktop/dokan.png"
+# 🌟 গিটহাবের সার্ভার থেকে সরাসরি তোমার দোকানের আসল ছবি লোড করা হচ্ছে (১০০% গ্যারান্টিড ক্লাউড ট্রিকস)
+photo_path = "dokan.jpeg"
 if os.path.exists(photo_path):
     st.image(photo_path, caption="Our Digital Counter & Stationery Shop", use_container_width=True)
 
@@ -52,7 +52,7 @@ DIST- SOUTH 24 PGS, PIN- 743504 | 📱 **Ph No:** 8927690548
 st.write("---")
 st.subheader("🛒 কাস্টমার অনলাইন পোর্টাল (Live Stock & Order Counter)")
 st.write("আমাদের দোকানের লাইভ স্টক নিচে দেওয়া হলো। আপনি এখান থেকেই সরাসরি আইটেম দেখে অর্ডার করতে পারেন:")
-photo_path = "c:/Users/Dell/Desktop/dokan.jpeg"
+
 # লাইভ ডেটা ক্লাউড লকার থেকে লোড হচ্ছে
 live_stock = load_live_stock()
 
@@ -82,7 +82,7 @@ else:
     
     customer_name = st.text_input("আপনার শুভ নাম লিখুন (Your Name):")
     customer_phone = st.text_input("আপনার মোবাইল নম্বর লিখুন (Phone Number):")
-    customer_address = st.text_area("আপনার সম্পূর্ণ ডেলিভারি ঠিকানা লিখুন (Full Delivery Address):")
+    customer_address = st.text_area("আপনার সম্পূর্ণ領 ডেলিভারি ঠিকানা লিখুন (Full Delivery Address):")
     
     selected_product = st.selectbox("কোন জিনিসটি কিনতে চান? সিলেক্ট করুন:", product_names)
     order_qty = st.number_input("কত পিস লাগবে? (Quantity):", min_value=1, step=1)
@@ -112,7 +112,7 @@ else:
                 * **মোট বিল:** {total_bill} Taka
                 """)
                 
-                # 🌟 জাদুর ম্যাজিক: হোয়াটসঅ্যাপ এপিআই মেসেজ তৈরি করা হচ্ছে
+                # 🌟 ৩. হোয়াটসঅ্যাপ এপিআই মেসেজ ফিক্সড লিঙ্ক
                 msg = f"🛒 *NEW ONLINE ORDER*\n\n👤 *Name:* {customer_name}\n📞 *Phone:* {customer_phone}\n📍 *Address:* {customer_address}\n📦 *Item:* {selected_product}\n📊 *Qty:* {order_qty} pcs\n💰 *Total:* {total_bill} Taka"
                 encoded_msg = urllib.parse.quote(msg)
                 whatsapp_url = f"https://wa.me{encoded_msg}"
