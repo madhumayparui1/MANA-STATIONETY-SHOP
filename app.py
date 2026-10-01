@@ -52,7 +52,7 @@ DIST- SOUTH 24 PGS, PIN- 743504 | 📱 **Ph No:** 8927690548
 st.write("---")
 st.subheader("🛒 কাস্টমার অনলাইন পোর্টাল (Live Stock & Order Counter)")
 st.write("আমাদের দোকানের লাইভ স্টক নিচে দেওয়া হলো। আপনি এখান থেকেই সরাসরি আইটেম দেখে অর্ডার করতে পারেন:")
-
+photo_path = "c:/Users/Dell/Desktop/dokan.jpeg"
 # লাইভ ডেটা ক্লাউড লকার থেকে লোড হচ্ছে
 live_stock = load_live_stock()
 
